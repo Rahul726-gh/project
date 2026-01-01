@@ -18,4 +18,8 @@ router.post("/submit", async (req, res) => {
   res.send("Form submitted successfully");
 });
 
+router.get("/submit", (req, res) => {
+  res.redirect("/");
+});
+
 module.exports = router;
